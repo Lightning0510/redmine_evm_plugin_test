@@ -1,3 +1,9 @@
 = evm
 
 Description goes here
+
+Get leafs issues : 
+select * from issues
+where issues.id not in
+(select distinct parent_id from issues 
+	where parent_id is not null)

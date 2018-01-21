@@ -6,4 +6,5 @@ Redmine::Plugin.register :evm do
   
   permission :evm, { :evm => [:index] }, :public => true
   menu :project_menu, :evm, { :controller => 'evm', :action => 'index' }, :caption => 'EVM', :after => :settings, :param => :project_id
+
 end
